@@ -1,39 +1,44 @@
-# HostsToolforMac
 
-一款轻量级本地 hosts 更新工具。
-- 开发语言：Swift<br>
-- 运行环境：macOS 10.12 或以上<br>
-- 在线更新：需要将解压好的App放至应用程序文件夹
-- [下载地址](https://github.com/ZzzM/HostsToolforMac/releases/download/2.7.0/HostsToolForMac.zip)
+<!-- [![](https://img.shields.io/badge/%E7%AE%80%E4%BB%8B-%E4%B8%AD%E6%96%87-orange)]()  -->
+<h1>
+HostsX</br>
+<a href="https://github.com/ZzzM/HostsX/releases/latest"><img src="https://img.shields.io/github/v/release/ZzzM/HostsX"></a>
+<a href="https://github.com/ZzzM/HostsX/releases/latest"><img src="https://img.shields.io/github/release-date/ZzzM/HostsX"></a>
+<a href="https://raw.githubusercontent.com/ZzzM/HostsX/master/LICENSE.md"><img src="https://img.shields.io/github/license/ZzzM/HostsX"></a>
+<!-- <img src="https://img.shields.io/badge/docs-%E7%AE%80%E4%B8%AD-red"> -->
+</h1>
 
+A lightweight macOS App for updating local hosts
 
-## 版本
+## Features
+- [x] Internationalization (简体中文、English)
+- [x] Dark mode
 
-| 版本 |  说明 |
-| ----  | ---- |
-| 2.6.0 | 更新菜单<br>更新设置面板<br>支持在线更新 |
-| 2.6.1 | - |
-| 2.7.0 | 更新菜单<br>更新设置面板<br>新增下载提示面板<br>适配 macOS Big Sur 11.0.1|
+## Compatibility
+- Requires **macOS 10.12** or later
 
-## 预览
-- 主页
-<img src="Previews/p1.png">
+## Changlogs
+- [简体中文](CHANGELOG_SC.md)
+- [English](CHANGELOG.md)
+
+## Snapshots
+- Menu
+
+<img src="assets/m1.png" height=150> <img src="assets/m2.png" height=150>  <img src="assets/m3.png" height=150>
   
-- 下载
-<img src="Previews/p2.png"> 
+- Remote configuration
+ 
+<img src="assets/r1.png" width=300> <img src="assets/r2.png" width=300>
 
-- 设置
-<img src="Previews/p3.png">
+## Note
+- Add DNS entries between `# My Hosts Start` and `# My Hosts End`
+```
+# My Hosts Start
 
+0.0.0.0 www.example0.com
+1.1.1.1 www.example1.com
+2.2.2.2 www.example2.com
 
-
-## Hosts下载源
-[coding](https://scaffrey.coding.net/p/hosts/d/hosts/git/raw/master/hosts-files/hosts)<br>
-[gogs](https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/hosts)<br>
-[github](https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts)
-
-## 注意
-- 第一次更新会完全覆盖原hosts，然后生成“# My Hosts Start”、“# My Hosts End”标识,需要添加的话，只要在“# My Hosts Start”、“# My Hosts End”范围内编辑，
-- 防止覆盖自己添加的hosts，只要在“# My Hosts Start”、“# My Hosts End”范围内编辑即可
-
+# My Hosts End
+```
 
